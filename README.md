@@ -7,7 +7,10 @@ Master thread coordination, memory visibility, transactional integrity, and high
 
 
 ## Q/A
-- Race Condition: A software bug that occurs when the outcome of a program depends on the unpredictable timing or sequence of events, such as multiple processes or threads accessing and modifying the same shared data. The most common type of race condition is `check-then-act`, where a potentially stale observation is used to make a decision on what to do next.
+- **Race Condition**: A software bug that occurs when the outcome of a program depends on the unpredictable timing or sequence of events, such as multiple processes or threads accessing and modifying the same shared data. The most common type of race condition is `check-then-act`, where a potentially stale observation is used to make a decision on what to do next.
+- **Deadlock**: Two or more threads hold locks and wait indefinitely for each other's lock to be released.
+- **Livelock**: Threads keep responding to each other's state changes, making progress impossible (but they remain active).
+- **Starvation**: A thread never gets CPU or resource time becasuse others monopilize it.
 
 # Data structures, Algorithms & Performance Engineering
 ## Objective:
